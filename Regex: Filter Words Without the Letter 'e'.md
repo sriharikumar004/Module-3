@@ -14,7 +14,17 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+```
+import re
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']
+l1 = []
+for i in items:
+    if not re.search(r"e", i):
+        l1.append(i)
+print("Words without the letter 'e':", l1)
+```
 ## Output
+<img width="601" height="161" alt="image" src="https://github.com/user-attachments/assets/6891551c-c729-4270-bb94-94611e89b5b2" />
 
 ## Result
+the program for finding the letters without "E" from a list is executed succesfully
